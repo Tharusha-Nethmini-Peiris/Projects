@@ -1,0 +1,92 @@
+
+.container{
+    height: 75px;
+    background-color: #4f1519;
+    background-size: cover;
+    width: 100%;
+    z-index: 90;
+	position: relative;
+	overflow: hidden;
+	margin-bottom:10px;
+	
+}
+
+/* ---- Navigation ---- */
+
+.main-nav{
+    float: left;
+    margin-left: 330px;
+	max-width: 1000px;
+}
+
+
+
+.main-nav a{
+    text-align: center;
+    font-size: .95em;
+    color: white;
+    opacity: 1;
+    text-transform: uppercase;
+    padding: 5px 5px;
+    transition: 0.4s ease;
+}
+
+.main-nav a:hover {
+    opacity: .5;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 15px;
+	margin-bottom: 25px;
+}
+body{
+	
+}
+.img1 {grid-area: myImg1;}
+
+.img2 {grid-area: myImg2;}
+
+.img3 {grid-area: myImg3;}
+
+.img4 {grid-area: myImg4;}
+
+.img5 {grid-area: myImg5;}
+
+.txt1 {grid-area: myTxt1;}
+
+.txt2 {grid-area: myTxt2;}
+
+.txt3 {grid-area: myTxt3;}
+
+.txt4 {grid-area: myTxt4;}
+
+.txt5 {grid-area: myTxt5;}
+
+.gallery{
+margin:10px 50px; 
+display:grid; 
+grid-template-areas: 'myImg1 myImg2 myImg3 myImg4 myImg5'
+'myTxt1 myTxt2 myTxt3 myTxt4 myTxt5';
+}
+
+.gallery img{ 
+padding:15px;
+}
+
+.gallery img:hover{
+filter: grayscale(100%); 
+transition:0.5s; 
+transform:scale(1.1);
+}
+.text {
+cursor:pointer;
+}
+#demo{
+	border:solid 2px;
+}
+h6{
+	font-size:23px;
+	margin-top:15%;
+	color: black;
+}

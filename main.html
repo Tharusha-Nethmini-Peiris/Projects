@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" href="normalize.css">
+	    <link rel="stylesheet" href="stylesheet.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		
+
+	</head>
+	<body>
+		<header>
+			<div class="top">
+                <img id="logo" src="img/logo.jpeg">
+				<form class="search" style="align:center">
+                    <input type="text" name="search" placeholder="Search.." id="searchbox1"> 
+                </form>
+			</div>
+			
+			<div class="container" id="container">
+                <ul class="main-nav">
+                    <li><a href="LoadingPage.html" id="home"><i class="fa fa-fw fa-home"></i>Home</a></li>
+                    <li><a href="#about"><i class="fa fa-user" style="padding-right: 7px"></i>About</a></li>
+                    <li><a href="#.html"><i class="fa fa-edit" id="last" style="padding-right: 7px"></i>Products</a></li>
+                    <li><a href="CommentForm.html"><i class="fa fa-fw fa-envelope" style="padding-right: 7px"></i>Support</a></li>
+                    <li><a href="Gallery.html"><i class="fa fa-image" style="padding-right: 7px"></i>Gallery</a></li>
+                    <li><a href="quiz.html"><i class="fa fa-edit" id="last" style="padding-right: 7px"></i>Quiz</a></li>
+                    <li><a href="#developers-heading"><i class="fa fa-edit" id="last" style="padding-right: 7px"></i>Developers</li>
+                    <li><a href="sitemap.html"><i class="fa fa-image" style="padding-right: 7px"></i>Site map</a></li>
+                </ul>
+            </div>
+			</header>
+			<div class="slideshow-container">
+			<div class="mySlides fade">
+				<img src="img/slideimg1.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides fade">
+				<img src="img/slideimg2.jpg" style="width:100%">
+			</div>
+
+			<div class="mySlides fade">
+				<img src="img/slideimg3.jpg" style="width:100%">
+			</div>
+
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			</div>
+			<br>
+			
+			<div style="text-align:center">
+				<span class="dot" onclick="currentSlide(1)"></span> 
+				<span class="dot" onclick="currentSlide(2)"></span> 
+				<span class="dot" onclick="currentSlide(3)"></span> 
+			</div>
+			
+			<div class="plate" id="about">
+				<p class="script"><span>The Real</span></p>
+				<p class="shadow text1">INTERNATIONAL</p>
+				<p class="shadow text2">BASKETBALL</p>
+				<p class="shadow text3">PRODUCTS</p>
+				<p class="script"><span>by BBS</span></p>
+			</div>
+			
+			<div class="container1">
+				<div class="box">
+					<img src="img/image1.jpg" style="width:100%">
+				</div>
+				<div class="box">
+					<img src="img/image2.jpg" style="width:100%">
+				</div>
+				<div class="box">
+					<img src="img/image3.jpg" style="width:100%">
+				</div>
+				<div class="box">
+					<img src="img/image4.jpg" style="width:100%">
+				</div>
+			</div>
+			<div class="paragraph">
+                <p><a href="#.html" style="color: white">CLICK HERE TO CHECK OUT OUR PRODUCTS</a></p>
+			</div>
+			<div class="container1">
+			<div class="overlay-slide">
+				<img src="img/product1.jpg" style="width:100%">
+				<div>
+					<h2>Awesome Title</h2>
+					<p>This hover effect is totally awesome.</p>
+				</div>
+			</div>
+			<div class="overlay-slide">
+				<img src="img/product2.jpg" style="width:100%">
+				<div>
+					<h2>Awesome Title</h2>
+					<p>This hover effect is totally awesome.</p>
+				</div>
+			</div>
+			<div class="overlay-slide">
+				<img src="img/product3.jpg" style="width:100%">
+				<div>
+					<h2>Awesome Title</h2>
+					<p>This hover effect is totally awesome.</p>
+				</div>
+			</div>
+			<div class="overlay-slide">
+				<img src="img/product4.jpg" style="width:100%">
+				<div>
+					<h2>Awesome Title</h2>
+					<p>This hover effect is totally awesome.</p>
+				</div>
+			</div>
+			<div class="overlay-slide">
+				<img src="img/product5.jpg" style="width:100%">
+				<div>
+					<h2>Awesome Title</h2>
+					<p>This hover effect is totally awesome.</p>
+				</div>
+			</div>
+			</div>
+			<div class="container2">
+			<div class="primary" id="Education">
+                <h1>New releases</h1>
+                <p>NIKE KD 13</p>
+                <p>Pre order now!</p>
+            </div>
+			</div>
+			<div class="container3">
+			<div class="tertiary clearfix">
+            <div id="myModal" class="modal">  
+                <div class="location-modal" id="location-modal">
+                    <span class="close">&times;</span>
+                    <div id="map">
+                                
+                    </div>
+                </div>         
+			</div>
+			 <h1 id="tertiary-heading">AVAILABLE SHOPES</h1>
+            <div class="shop1">
+                <div class="event clearfix" id="event1">
+                    <div class="details">
+                        <h4>BBS STORE</h4>
+                        <p>Venue: Majestic city</p>
+                    </div>
+                    <div class="location" >
+                        <img src="img/majesticcity.jpg"  class="location-images" id="locationpic1">
+                    </div>
+                </div>
+                <div class="event clearfix">
+                    <div class="details">
+                        <h4>BBS STORE</h4>
+                        <p>Venue: Liberty plaza</p>
+                    </div>
+                    <div class="location" >
+                        <img src="img/liberty.jpg" class="location-images" id="locationpic2">
+                    </div>
+                </div>
+                <div class="event clearfix">
+                    <div class="details">
+                        <h4>BBS STORE</h4>
+                        <p>Venue: Colombo CIty Center</p>
+                    </div>
+                    <div class="location" >
+                        <img src="img/ccc.jpg" class="location-images" id="locationpic3">
+                    </div>
+                </div>
+            </div>
+            <div class="shop2 clearfix">
+                <div class="event clearfix">
+                    <div class="details">
+                        <h4>BBS STORE</h4>
+                        <p>Venue: Marino Mall</p>
+                    </div>
+                    <div class="location" >
+                        <img src="img/mm.jpg" class="location-images" id="locationpic4">
+                    </div>
+                </div>
+                <div class="event clearfix">
+                    <div class="details">
+                        <h4>BBS STORE</h4>
+                        <p>Venue: Kandy City Center</p>
+                    </div>
+                    <div class="location" >
+                        <img src="img/kcc.jpg" class="location-images" id="locationpic5">
+                    </div>
+                </div>
+                <div class="event clearfix">
+                    <div class="details">
+                        <h4>BBS STORE</h4>
+                        <p>Venue: One Galle Face</p>
+                    </div>
+                    <div class="location" >
+                        <img src="img/wtc.jpg" class="location-images" id="locationpic6">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+	<div class="paragraph"id="developers-heading">
+        <p style="color: white">DEVELOPERS</p>
+	</div>
+	<div class="container4">
+		<div class="box1" style="margin-left:12%">
+			<div class="imgbox1">
+				<img src="Danuja.jpg">
+			</div>
+			<div class="content">
+				<div>
+					<h2>Student 1</h2>
+					<p>Name: Danuja Silva <br><br> UOW ID: w1761772 <br><br> IIT ID: 2018221<br>	
+					<input type="button" value="For More Info" onclick="newDoc1()">
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="box1">
+			<div class="imgbox1">
+				<img src="Thamadi.jpg">
+			</div>
+			<div class="content">
+				<div>
+					<h2>Student 2</h2>
+					<p>Name: K.A.T.D.Gunawardena  <br><br> UOW ID: w1714900  <br><br> IIT ID: 2018135<br>					
+					<input type="button" value="For More Info" onclick="newDoc2()">
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="box1">
+			<div class="imgbox1">
+				<img src="Tharusha.jpg">
+			</div>
+			<div class="content">
+				<div>
+					<h2>Student 3</h2>
+					<p>Name: W.T.N.Peiris<br><br> UOW ID: w1761915  <br><br> IIT ID: 2018422<br>	
+					<<input type="button" value="For More Info" onclick="newDoc3()">
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="box1">
+			<div class="imgbox1">
+				<img src="Jonathan.jpg">
+			</div>
+			<div class="content">
+				<div>
+					<h2>Student 4</h2>
+					<p>Name: E.J.Homer <br><br> UOW ID: w1761887 <br><br> IIT ID: 2018330<br>	
+					<input type="button" value="For More Info" onclick="newDoc4()">
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container5">
+	<a href="article1.html" class="button1">Article 01</a>
+	<a href="article2.html" class="button2">Article 02</a>
+	<a href="article3.html" class="button2">Article 03</a>
+	<a href="article4.html" class="button2">Article 04</a>
+	</div>
+	</body>
+	
+	<footer class="footer-distributed" id="support">
+	<div class="footer-left">
+
+				<h3>BASKETBALL<span>STORES</span></h3>
+
+
+				<p class="footer-company-name">Thamadie Gunawardena © 2020</p>
+				<div class="footer-icons">
+
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-github"></i></a>
+
+				</div>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>57 Ramakrishna Rd,</span> Colombo 00600</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>0112 360 212</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:BBS@company.com">BBS@company.com</a></p>
+				</div>
+				<div>
+					<h6>Page Editor: <a href="Student2.html">Student 2</a></h6>
+				</div>
+
+			</div>
+	<div class="footer-right">
+
+				<p>Contact Us</p>
+
+				<form action="#" method="post">
+
+					<input type="text" name="email" placeholder="Email">
+					<textarea name="message" placeholder="Message"></textarea>
+					<button>Send</button>
+
+				</form>
+
+	</div>
+	</footer>
+
+	
+		<script src="script1.js"></script>
+</html>

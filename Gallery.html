@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gallery</title>
+<link rel="stylesheet" type="text/css" href="gallery.css">
+<div class="container" id="container">
+                <ul class="main-nav">
+                    <li><a href="main.html" id="home"><i class="fa fa-fw fa-home"></i>Home</a></li>
+                    <li><a href="main.html"><i class="fa fa-user" style="padding-right: 7px"></i>About</a></li>
+                    <li><a href="#.html"><i class="fa fa-edit" id="last" style="padding-right: 7px"></i>Products</a></li>
+                    <li><a href="CommentForm.html"><i class="fa fa-fw fa-envelope" style="padding-right: 7px"></i>Support</a></li>
+                    <li><a href="Gallery.html"><i class="fa fa-image" style="padding-right: 7px"></i>Gallery</a></li>
+                    <li><a href="quiz.html"><i class="fa fa-edit" id="last" style="padding-right: 7px"></i>Quiz</a></li>
+                    <li><a href="main.html"><i class="fa fa-edit" id="last" style="padding-right: 7px"></i>Developers</li>
+                    <li><a href="sitemap.html"><i class="fa fa-image" style="padding-right: 7px"></i>site map</a></li>
+                </ul>
+            </div>
+</head>	
+
+<body>
+<form>
+<input type = "text" id = "colortext" placeholder="Type a color">
+<input type="button" id = "colorbutton" value="Click to change backround to given color" onclick="changebackroundcolor()">
+
+<input type = "text" id = "textcolor" placeholder="Type a color">
+<input type="button" id = "textbutton" value="Click to change text to given color" onclick="changetextcolor()">
+
+<div class="gallery">
+<img src = "shoes.jpg" alt = "lebron 17" width=250 height=250 id = "img1">
+
+<img src = "t-shirts.jpg" alt = "lebron 17" width=250 height=250 id = "img2">
+
+<img src = "nikeBag2.jpg" alt = "lebron 17" width=250 height=250 id = "img3">
+
+<img src = "cap.jpg" alt = "lebron 17" width=250 height=250 id = "img4">
+
+<img src = "nikeBag.jpg" alt = "lebron 17" width=250 height=250 id = "img5">
+
+<p id = "txt1" class = "text" onclick="displayimg()">Nike Air Jordans (click to view more)</p>
+<p id = "txt2" class = "text" onclick="ter()">Nike T-Shirts (click to view more)</p>
+<p id = "txt3" class = "text" onclick="ter1()">Nike Bag Style 1 (click to view more)</p>
+<p id = "txt4" class = "text" onclick="ter2()">Nike Caps (click to view more)</p>
+<p id = "txt5" class = "text" onclick="ter3()">Nike Bag Style 2 (click to view more)</p>
+
+</div>
+<div class="description">
+<img id = "demo" width=300 height=300 ></img>
+<p id = "demo1" class="text"></p>
+</div>
+
+</form>
+<footer>
+	<div>
+		<h6>Page Editor: <a href="Student4.html">Student 4</a></h6>
+	</div>
+</footer>
+
+<script>
+function changebackroundcolor(){
+var color = document.getElementById("colortext").value;
+document.body.style.backgroundColor = color;
+}
+function changetextcolor(){
+var color = document.getElementById("textcolor").value;
+var x = document.getElementsByClassName("text");
+  x[0].style.color = color;
+  x[1].style.color = color;
+  x[2].style.color = color;
+  x[3].style.color = color;
+  x[4].style.color = color;
+  x[5].style.color = color;
+}
+function displayimg(){
+var txtid1 = document.getElementsByClassName("text")[0].id;
+document.getElementById("demo1").innerHTML = "Men's Basketball Shoe features exceptional support, traction and cushioning designed for explosive first steps and quick cuts on indoor courts.";
+document.getElementById('demo').src='shoes.jpg';}
+
+function ter(){
+var txtid2 = document.getElementsByClassName("text")[1].id;
+document.getElementById("demo1").innerHTML = "made with breathable, sweat-wicking mesh fabric for a cool, comfortable feel all day. Screen-printed details show off your team pride during match festivities.";
+document.getElementById('demo').src='t-shirts.jpg';}
+
+function ter1(){
+var txtid2 = document.getElementsByClassName("text")[2].id;
+document.getElementById("demo1").innerHTML = "Basketball Backpack features multiple small-item pockets and a separate, ventilated compartment for your shoes. Its shoulder straps feature Pro Adapt technology for comfortable carrying to and from the gym.";
+document.getElementById('demo').src='nikeBag2.jpg';}
+
+function ter2(){
+var txtid2 = document.getElementsByClassName("text")[3].id;
+document.getElementById("demo1").innerHTML = "Lightweight and sweat-wicking, the Hat is a perfect companion on or off the course. A soft, snapback closure creates a comfortable fit you can adjust on the fly.";
+document.getElementById('demo').src='cap.jpg';} 
+
+function ter3(){
+var txtid2 = document.getElementsByClassName("text")[4].id;
+document.getElementById("demo1").innerHTML = "Men's Training Duffel Bag (Medium) is built to carry all your training essentials. Multiple zippered pockets help keep you organized, while a shoe compartment separates your clean and dirty gear.";
+document.getElementById('demo').src='nikeBag.jpg';
+}
+</script>
+</body>
+</html>
+
+
